@@ -1,0 +1,32 @@
+* {
+    /* configuraciones generales para la pagina */
+
+    /*sirve para quitar el espaciado*/
+    margin: unset;
+    padding: unset;
+    outline: unset;
+    /*sirve para quitar el borde de los formularios*/
+    border: unset;
+    /*sirve para quitar los bordes*/
+
+    box-sizing: border-box;
+    /*hace que no crezca la caja asi se le aplique el margin y el padding*/
+    /* display: block; */
+
+    list-style: none;
+    /*sirve para quitar los puntos de las listas*/
+    text-decoration: none;
+    /*sirve para quitar las lineas debajo de los link*/
+
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+body{
+
+    font-size: 1rem;
+
+}
+
