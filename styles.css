@@ -26,46 +26,6 @@
 }
 
 body{
-
     font-size: 1rem;
-    display: flex;
-
-}
-
-nav {
-
-    background-color: #F23030;
-}
-
-.Nav__bar{
-
-    display: flex;
-    flex-direction: column;
-    padding: 10px 10px;
-
-}
-
-.Nav__bar__lateral{
-
-    display: flex;
-    flex-direction: column;
-    padding: 10px 30px;
-    gap: 30px;
-
-}
-
-.Nav__bar__lateral button img{
-    width: 30px;
-}
-
-.barra__lateral__izquierda__otros{
-    
-    display: flex;
-    flex-direction: column;
-
-}
-
-.barra__lateral__izquierda__otros button img{
-    width: 30px;
 }
 
