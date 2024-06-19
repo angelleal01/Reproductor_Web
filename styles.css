@@ -30,3 +30,11 @@ body{
     font-size: 1rem;
 
 }
+
+.Nav__bar{
+
+    display: flex;
+    flex-direction: column;
+    
+
+}
