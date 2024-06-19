@@ -35,6 +35,15 @@ body{
 
     display: flex;
     flex-direction: column;
-    
+    background-color: #f230309e;
+    margin: 50px 10px; 
+
+}
+
+.Nav__bar__lateral{
+
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
 
 }
