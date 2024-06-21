@@ -16,15 +16,21 @@ body {
     display: flex;
 }
 
+.lado__izquierdo{
+
+    display: flex;
+
+}
+
 .lado__izquierdo__container {
 
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 60px;
     align-items: center;
     justify-content: center;
     background: #f2303094;
-    padding: 30px 30px;
+    padding: 10px 30px;
 
 }
 
