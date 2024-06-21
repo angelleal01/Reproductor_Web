@@ -182,8 +182,10 @@ button {
 
 .main__section2__contenido1__recomendado__tarjetas {
 
-    display: flex;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1fr, 180px));
+    gap: 10px;
+    
 }
 
 .tarjetas__Recomendadas {
