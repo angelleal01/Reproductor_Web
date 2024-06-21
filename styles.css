@@ -183,7 +183,7 @@ button {
 .main__section2__contenido1__recomendado__tarjetas {
 
     display: flex;
-
+    gap: 20px;
 }
 
 .tarjetas__Recomendadas {
@@ -200,6 +200,7 @@ button {
 .tarjetas__Recomendadas>img {
 
     border-radius: 5px;
+    max-width: 200px;
 
 }
 
