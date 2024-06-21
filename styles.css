@@ -10,8 +10,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 
-    /* No asignes un background acá o todos los elementos lo tendrám */
-    /* background: #260101; */
+    /* No asignes un background acá o todos los elementos lo tendrán */
 }
 
 body {
@@ -22,6 +21,7 @@ body {
 
 button {
     background-color: transparent;
+    cursor: pointer;
 }
 
 .lado__izquierdo{
@@ -36,8 +36,8 @@ button {
     flex-direction: column;
     gap: 60px;
     align-items: center;
-    justify-content: center;
-    background: #f2303094;
+    justify-content: space-between;
+    background: #f230307a;
     padding: 10px 30px;
 
 }
@@ -47,18 +47,12 @@ button {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    align-items: center;
-    background: none;
-    /* width: 0px;  lo dejo? o no? */
-
 }
 
 .lado__izquierdo__container__1>button>img {
 
     max-width: 32px;
     padding: 5px;
-    /* background: #f2303094; */
-
 }
 
 .lado__izquierdo__container__2 {
@@ -66,20 +60,21 @@ button {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background: none;
 
 }
 
 .lado__izquierdo__container__2>button>img {
 
-    max-width: 40px;
+    max-width: 32px;
     padding: 5px;
-    background: #f2303094;
-
 }
 
 .main {
 
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
     color: #FFFFFF;
     flex-grow: 1;
 
@@ -89,13 +84,11 @@ button {
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border-bottom: 1px solid #f2303025;
 
     /* Evita el uso de margin, mejor usa padding */
-    /* margin: 15px 90px 15px 30px; */
     padding: 15px 30px;
-
-    
     gap: 20px;
 
 }
@@ -107,8 +100,6 @@ button {
     background-color: #d9d2d079;
     border-radius: 5px;
     padding: 2px 5px;
-    align-items: center;
-    justify-content: start;
 
 }
 
@@ -135,9 +126,7 @@ button {
 .main__section1__derecho {
 
     display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: end;
+    gap: 35px;
 
 }
 
@@ -145,6 +134,7 @@ button {
 
     width: 25px;
     height: 30px;
+    cursor: pointer;
 
 }
 
@@ -152,18 +142,16 @@ button {
 
     width: 40px;
     height: 30px;
+    cursor: pointer;
 
 }
 
 .main__section2 {
 
     display: flex;
-
-    /* margin: 10px 30px; */
-    padding: 10px 30px;
-
-
-    /* margin-top: 50px; */
+    align-items: stretch;
+    justify-content: space-between;    
+    padding: 3px 10px;
 
 }
 
@@ -171,7 +159,9 @@ button {
 
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    align-items: start;
+    justify-content: space-between;
+    gap: 60px;
 
 }
 
@@ -199,7 +189,7 @@ button {
 
     display: flex;
     flex-direction: column;
-    background: #F23030;
+    background: #f2303071;
     padding: 5px;
     border-radius: 10px;
     box-shadow: 3px 4px 7px #f230303a;
@@ -215,10 +205,9 @@ button {
 .tarjetas__Recomendadas__abajo {
 
     display: flex;
-    background: #F23030;
-    margin-top: 3px;
-    padding: 3px;
-    gap: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
 
 }
 
@@ -239,6 +228,8 @@ button {
 
     display: flex;
     flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
     gap: 30px;
 
 }
@@ -261,7 +252,7 @@ button {
     display: flex;
     flex-direction: column;
     background: #1f1f1f;
-    border-radius: 5px;
+    border-radius: 10px;
 
 }
 
@@ -269,7 +260,7 @@ button {
 
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
     padding: 5px 10px;
     border-radius: 5px;
 
@@ -289,19 +280,12 @@ button {
 
 }
 
-.circulo{
-
-    margin-left: auto;
-
-}
-
 .main__section2__contenido2{
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 100px;
+    justify-content: space-between;
 
 }
 
@@ -309,6 +293,8 @@ button {
 
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     background: #f252527a;
     padding: 10px 30px;
     border-radius: 5px;
@@ -319,10 +305,16 @@ button {
 
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     align-items: center;
-    justify-content: center;
-    padding: 10px 10px;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+}
+
+.main__section2__contenido2__anteriores img{
+
+    max-width: 35px;
 
 }
 
@@ -333,20 +325,13 @@ button {
 
 }
 
-.Equalizador{
-
-  width: 25px;  
-
-}
-
 .main__section2__contenido2__anteriores__container{
 
     display: flex;
-    gap: 15px;
+    gap: 20px;
     border: 1px solid #f29494ab;
-    padding: 2px 5px;
+    padding: 1px 5px;
     border-radius: 10px;
-    margin: 20px;
 
 }
 
@@ -354,8 +339,9 @@ button {
 
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    gap: 5px
+    gap: 2px
 
 }
 
@@ -365,5 +351,3 @@ button {
     opacity: .4;
 
 }
-
-/* Faltan arreglar cosas :((( */
