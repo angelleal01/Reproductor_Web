@@ -152,6 +152,7 @@ button {
     align-items: stretch;
     justify-content: space-between;    
     padding: 3px 10px;
+    flex-grow: 1;
 
 }
 
@@ -162,15 +163,18 @@ button {
     align-items: start;
     justify-content: space-between;
     gap: 60px;
+    flex-grow: 1;
 
 }
 
 .main__section2__contenido1__recomendado {
 
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     gap: 30px;
     overflow-x: scroll;
+
 
 }
 
@@ -180,11 +184,12 @@ button {
 
 }
 
-.main__section2__contenido1__recomendado__tarjetas {
+.main__section2__contenido1__recomendado__tarjetas{
 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(1fr, 180px));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)) !important;
     gap: 10px;
+    flex-grow: 1;
     
 }
 
