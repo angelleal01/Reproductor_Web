@@ -8,12 +8,20 @@
     text-decoration: none;
     font-weight: 400;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #260101;
+
+
+    /* No asignes un background acá o todos los elementos lo tendrám */
+    /* background: #260101; */
 }
 
 body {
     font-size: 1rem;
     display: flex;
+    background: #260101;
+}
+
+button {
+    background-color: transparent;
 }
 
 .lado__izquierdo{
@@ -47,9 +55,9 @@ body {
 
 .lado__izquierdo__container__1>button>img {
 
-    max-width: 40px;
+    max-width: 32px;
     padding: 5px;
-    background: #f2303094;
+    /* background: #f2303094; */
 
 }
 
@@ -73,6 +81,7 @@ body {
 .main {
 
     color: #FFFFFF;
+    flex-grow: 1;
 
 }
 
@@ -81,7 +90,12 @@ body {
     display: flex;
     align-items: center;
     border-bottom: 1px solid #f2303025;
-    margin: 15px 90px 15px 30px;
+
+    /* Evita el uso de margin, mejor usa padding */
+    /* margin: 15px 90px 15px 30px; */
+    padding: 15px 30px;
+
+    
     gap: 20px;
 
 }
@@ -144,8 +158,12 @@ body {
 .main__section2 {
 
     display: flex;
-    margin: 10px 30px;
-    margin-top: 50px;
+
+    /* margin: 10px 30px; */
+    padding: 10px 30px;
+
+
+    /* margin-top: 50px; */
 
 }
 
@@ -242,6 +260,8 @@ body {
 
     display: flex;
     flex-direction: column;
+    background: #1f1f1f;
+    border-radius: 5px;
 
 }
 
@@ -250,9 +270,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: start;
-    background: #1f1f1f;
-    padding-top: 5px;
+    padding: 5px 10px;
     border-radius: 5px;
+
 
 }
 
