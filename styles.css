@@ -24,7 +24,7 @@ button {
     cursor: pointer;
 }
 
-.lado__izquierdo{
+.lado__izquierdo {
 
     display: flex;
 
@@ -150,7 +150,7 @@ button {
 
     display: flex;
     align-items: stretch;
-    justify-content: space-between;    
+    justify-content: space-between;
     padding: 3px 10px;
     flex-grow: 1;
 
@@ -168,11 +168,11 @@ button {
 
 .main__section2__contenido1__recomendado {
 
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    overflow-x: scroll;
+    max-height: 325px;
+    overflow-y: scroll;
 
 
 }
@@ -183,13 +183,13 @@ button {
 
 }
 
-.main__section2__contenido1__recomendado__tarjetas{
+.main__section2__contenido1__recomendado__tarjetas {
 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)) !important;
     gap: 10px;
     flex-grow: 1;
-    
+
 }
 
 .tarjetas__Recomendadas {
@@ -219,7 +219,7 @@ button {
 
 }
 
-.tarjetas__Recomendadas__abajo__info{
+.tarjetas__Recomendadas__abajo__info {
 
     font-size: 14px;
 
@@ -275,20 +275,20 @@ button {
 
 }
 
-.abajo__info{
+.abajo__info {
 
     font-size: 14px;
 
 }
 
-.abajo__info p:nth-child(2){
+.abajo__info p:nth-child(2) {
 
     opacity: .4;
     font-size: 10px;
 
 }
 
-.main__section2__contenido2{
+.main__section2__contenido2 {
 
     display: flex;
     flex-direction: column;
@@ -297,7 +297,7 @@ button {
 
 }
 
-.main__section2__contenido2__reproductor{
+.main__section2__contenido2__reproductor {
 
     display: flex;
     flex-direction: column;
@@ -309,7 +309,7 @@ button {
 
 }
 
-.main__section2__contenido2__anteriores{
+.main__section2__contenido2__anteriores {
 
     display: flex;
     flex-direction: column;
@@ -320,20 +320,20 @@ button {
 
 }
 
-.main__section2__contenido2__anteriores img{
+.main__section2__contenido2__anteriores img {
 
     max-width: 35px;
 
 }
 
-.main__section2__contenido2__anteriores>p{
+.main__section2__contenido2__anteriores>p {
 
     font-weight: bold;
     font-size: 15px;
 
 }
 
-.main__section2__contenido2__anteriores__container{
+.main__section2__contenido2__anteriores__container {
 
     display: flex;
     gap: 20px;
@@ -343,19 +343,72 @@ button {
 
 }
 
-.main__section2__contenido2__anteriores__container__info{
+.main__section2__contenido2__anteriores__container__info {
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2px
-
 }
 
-.main__section2__contenido2__anteriores__container__info p:nth-child(2){
+.main__section2__contenido2__anteriores__container__info p:nth-child(2) {
 
     font-size: 10px;
     opacity: .4;
 
+}
+
+
+.main__section2__contenido1__recomendado::-webkit-scrollbar {
+    width: 8px;
+    /* Tamaño del scroll en vertical */
+    height: 8px;
+    /* Tamaño del scroll en horizontal */
+    display: none;
+    /* Ocultar scroll */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+.main__section2__contenido1__recomendado::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.main__section2__contenido1__recomendado::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.main__section2__contenido1__recomendado::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+
+
+body::-webkit-scrollbar {
+    width: 8px;
+    /* Tamaño del scroll en vertical */
+    height: 8px;
+    /* Tamaño del scroll en horizontal */
+    display: inline;
+    /* Ocultar scroll */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+body::-webkit-scrollbar-thumb {
+    background: #e4000081;
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+body::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
 }
