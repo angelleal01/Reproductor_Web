@@ -172,22 +172,24 @@ button {
     flex-direction: column;
     gap: 30px;
     max-height: 325px;
-    overflow-y: scroll;
-
-
+    
+    
 }
 
 .main__section2__contenido1__recomendado>p {
-
+    
     font-size: 30px;
-
+    
+    
 }
 
 .main__section2__contenido1__recomendado__tarjetas {
-
+    
+    overflow-y: scroll;
+    /* display: flex; */
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)) !important;
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
     flex-grow: 1;
 
 }
