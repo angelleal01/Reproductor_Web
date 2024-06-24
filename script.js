@@ -60,10 +60,14 @@ axios.get('https://leonardoapi.onrender.com/songs').then((res) => {
     const songlist = res.data.songs
     const trackList = document.getElementById('track-list')
 
+    const tracklist = document.getElementById('track-list')
+
     console.log(songlist)
 
     //Recorriendo la lista de Canciones
     songlist.map((song) => {
+        //Por cada cancion
+
 
         const div = document.createElement('div')
         div.classList.add('tarjetas__Recomendadas')
