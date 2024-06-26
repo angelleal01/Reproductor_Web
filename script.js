@@ -85,6 +85,23 @@ axios.get('https://leonardoapi.onrender.com/songs').then((res) => {
 
             </div>
         `
+
+        // Antes de agregar el elemento, agregar la interactividad
+
+        div.addEventListener('click', () => {
+            //Lo que yo escriba aca sucede cuando pase el evento
+
+            document.getElementById('portada').setAttribute('src', song.path.front)
+
+            document.getElementById('titulo').innerHTML = song.title
+
+
+
+            alert(song.title)
+
+        })
+
+
         trackList.appendChild(div)
 
     })

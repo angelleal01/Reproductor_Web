@@ -202,6 +202,7 @@ button {
     padding: 5px;
     border-radius: 10px;
     box-shadow: 3px 4px 7px #f230303a;
+    cursor: pointer;
 
 }
 
@@ -308,6 +309,14 @@ button {
     background: #f252527a;
     padding: 10px 30px;
     border-radius: 5px;
+    margin-left: 15px;
+    gap: 10px;
+
+}
+
+.main__section2__contenido2__reproductor img {
+
+    width: 200px;
 
 }
 
