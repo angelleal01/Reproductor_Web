@@ -55,7 +55,7 @@
 // }
 
 axios.get('https://leonardoapi.onrender.com/songs').then((res) => {
-    
+
     //Guardo la lista de canciones
     const songlist = res.data.songs
     const trackList = document.getElementById('track-list')
@@ -95,11 +95,49 @@ axios.get('https://leonardoapi.onrender.com/songs').then((res) => {
 
             document.getElementById('titulo').innerHTML = song.title
 
+            const audio = document.getElementById('audio')
+
+            audio.setAttribute('src', song.path.audio)
+
+            document.getElementById('play').addEventListener('click', () => {
+
+                if (audio.paused) {
+
+                    audio.play()
+
+                } else {
+
+                    audio.pause()
+
+                }
 
 
-            alert(song.title)
+            })
+
+            document.getElementById('playboton').addEventListener('click', () => {
+                audio
+            })
+
+
+
+            // alert(song.title)
 
         })
+
+
+        // // Agrega un botón para agregar el audio a una lista de reproducción
+        // const addButton = document.querySelector(".add-button");
+
+        // addButton.addEventListener("click", () => {
+        //     // Agrega el audio a una lista de reproducción
+        // });
+
+        // // Agrega un botón para compartir el audio en las redes sociales
+        // const shareButton = document.querySelector(".share-button");
+
+        // shareButton.addEventListener("click", () => {
+        //     // Comparte el audio en las redes sociales
+        // });
 
 
         trackList.appendChild(div)
