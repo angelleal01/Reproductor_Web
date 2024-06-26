@@ -449,7 +449,7 @@ audio::-webkit-controls {
 }
 
 audio::-webkit-media-controls-timeline {
-    background-color: #666;
+    background:none;
   }
 
 audio::-webkit-slider-thumb {
