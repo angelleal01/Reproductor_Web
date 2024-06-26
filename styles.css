@@ -440,8 +440,8 @@ body::-webkit-scrollbar-thumb:active {
 
 /* Para cambiar los controles del reproductor */
 audio {
-    width: 500px;
-    height: 40px;
+    width: 350px;
+    height: 20px;
 }
 
 audio::-webkit-controls {
